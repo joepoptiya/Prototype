@@ -1,0 +1,4 @@
+C:\Temp\AuctionPrototype\Auction.Webapi.Data\bin\Debug\Auction.Webapi.Data.dll
+C:\Temp\AuctionPrototype\Auction.Webapi.Data\bin\Debug\Auction.Webapi.Data.pdb
+C:\Temp\AuctionPrototype\Auction.Webapi.Data\obj\Debug\Auction.Webapi.Data.dll
+C:\Temp\AuctionPrototype\Auction.Webapi.Data\obj\Debug\Auction.Webapi.Data.pdb

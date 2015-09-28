@@ -1,0 +1,176 @@
+﻿<div class="row">
+    <div class="span10">
+        <h2>Organization: Register</h2>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-sm-2">
+        <div class="row">
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="/Company/Organization/Home">Home</a></li>
+              <li class="active"><a href="/Company/Organization/Register">Register Organization</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="disabled"><a href="#">Disabled</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>User: {{ userinfo.username }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10">
+                <form name="organizationForm" class="form-horizontal" novalidate>
+                  <fieldset>
+                      <legend>New Organization</legend>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Organization Name:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="orgName" ng-model="organization.Name" class="form-control" required/>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.Name.$error.required && organizationForm.Name.$dirty">Please enter your Organization Name.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label" for="orgDescription">Description:</label>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control" id="orgDescription" rows="3" ng-model="organization.Description"></textarea>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.Description.$error.required && organizationForm.Description.$dirty">Please enter your Organization Description.</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Address:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="orgAddress1" ng-model="organization.Address1" class="form-control" required/>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.Address1.$error.required && organizationForm.Address1.$dirty">Please enter your Organization Address.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Address:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="orgAddress2" ng-model="organization.Address2" class="form-control"d/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">City:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="orgCity" ng-model="organization.City" class="form-control" required/>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.City.$error.required && organizationForm.City.$dirty">Please enter your Organization City.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">State:</label>
+                                    <div class="col-lg-3">
+                                        <select class="form-control" id="orgState" ng-model="organization.State" required>
+                                          <option>AL</option>
+                                          <option>IL</option>
+                                          <option>IN</option>
+                                          <option>CA</option>
+                                          <option>WA</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.State.$error.required && organizationForm.State.$dirty">Please enter your Organization State.</div>
+                                    <label class="col-lg-3 control-label">Zip:</label>
+                                    <div class="col-lg-3">
+                                        <input type="text" name="orgZip" ng-model="organization.Zip" class="form-control" placeholder="XXXXX-XXXX" required/>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.Zip.$error.required && organizationForm.Zip.$dirty">Please enter your Organization Zip.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Primary Contact:</label>
+                                    <div class="col-lg-9">
+                                        <input type="text" name="orgPrimaryContact" ng-model="organization.PrimaryContact" class="form-control" required/>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.PrimaryContact.$error.required && organizationForm.PrimaryContact.$dirty">Please enter your Organization Primary Contact.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Email Address:</label>
+                                    <div class="col-lg-9">
+                                        <input type="email" name="orgPrimaryContactEmail" ng-model="organization.PrimaryContactEmail" class="form-control" placeholder="Email" required ng-pattern="/^[a-zA-Z0-9'._%+-]+@[a-zA-Z0-9-][a-zA-Z0-9.-]*\.[a-zA-Z]{2,9}$/"/>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.PrimaryContactEmail.$error.required && organizationForm.PrimaryContactEmail.$dirty">Please enter your Organization Primary Contact Email address.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label">Phone Number:</label>
+                                    <div class="col-lg-9">
+                                        <input type="email" name="orgPrimaryContactPhone" ng-model="organization.PrimaryContactPhone" class="form-control" placeholder="(123) 456-7839 (x12345)" required/>
+                                    </div>
+                                    <div class="text-danger" ng-show="organizationForm.PrimaryContactPhone.$error.required && organizationForm.PrimaryContactPhone.$dirty">Please enter your Organization Primary Contact Email address.</div>
+                                </div>
+
+
+                                <a class="btn btn-default" href="/Company/Organization/Home">Cancel</a>
+
+<!--                                <button class="btn btn-default" ng-disabled="organizationForm.$invalid" ng-click="save(organization)">Create Organization</button>-->
+                                <button class="btn btn-default" ng-click="save(organization)">Create Organization</button>
+                                <div style="color:red;" ng-show="errors.length > 0" ng-repeat="error in errors">{{error}}</div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <div class="row">
+            <aside class="top-sidebar">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Help Content</h3>
+                  </div>
+                  <div class="panel-body">
+                    Here is some helpful tips and guideline for what to do.
+                  </div>
+                </div>
+		    </aside>
+            <aside class="top-sidebar">
+			    <article>
+                    <div class="list-group">
+                      <a class="list-group-item" href="#">
+                        <h4 class="list-group-item-heading">Help Content</h4>
+                        <p class="list-group-item-text">Here is some helpful tips and guideline for what to do.</p>
+                      </a>
+                      <a class="list-group-item" href="#">
+                        <h4 class="list-group-item-heading">How-To</h4>
+                        <p class="list-group-item-text">Here is some helpful tips and guideline for what to do.  Here is some helpful tips and guideline for what to do.</p>
+                      </a>
+                    </div>
+			    </article>
+		    </aside>
+            <aside class="top-sidebar">
+			    <article>
+			    <h2>Help Content</h2>
+			    <p>Here is some helpful tips and guideline for what to do.</p>
+			    </article>
+		    </aside>
+            <aside class="top-sidebar">
+			    <article>
+			    <h2>Help Content</h2>
+			    <p>Here is some helpful tips and guideline for what to do.</p>
+			    </article>
+		    </aside>
+        </div>
+    </div>
+</div>
+
+

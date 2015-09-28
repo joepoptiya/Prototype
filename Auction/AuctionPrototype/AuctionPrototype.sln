@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.Webapi.Data", "Auction.Webapi.Data\Auction.Webapi.Data.csproj", "{23F5BE22-D560-4AB1-88BF-2FCCC22C7C4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.Webapi.Data.UnitTest", "Auction.Webapi.Data.UnitTest\Auction.Webapi.Data.UnitTest.csproj", "{FE66B053-51F1-47C0-A798-50E728F20D40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23F5BE22-D560-4AB1-88BF-2FCCC22C7C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F5BE22-D560-4AB1-88BF-2FCCC22C7C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F5BE22-D560-4AB1-88BF-2FCCC22C7C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F5BE22-D560-4AB1-88BF-2FCCC22C7C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE66B053-51F1-47C0-A798-50E728F20D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE66B053-51F1-47C0-A798-50E728F20D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE66B053-51F1-47C0-A798-50E728F20D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE66B053-51F1-47C0-A798-50E728F20D40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

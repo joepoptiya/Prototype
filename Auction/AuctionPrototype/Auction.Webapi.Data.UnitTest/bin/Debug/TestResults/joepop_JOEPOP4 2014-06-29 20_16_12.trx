@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c21b5bb4-29ab-49a7-9d4b-4b3ad152f0e4" name="joepop@JOEPOP4 2014-06-29 20:16:12" runUser="REDMOND\joepop" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="4595639d-96fe-4dca-a07e-05e67d4f6686">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="joepop_JOEPOP4 2014-06-29 20_16_12" />
+  </TestSettings>
+  <Times creation="2014-06-29T20:16:12.8432518-07:00" queuing="2014-06-29T20:16:13.2773016-07:00" start="2014-06-29T20:16:13.3503006-07:00" finish="2014-06-29T20:16:13.7885930-07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetCustomer_ValidId" storage="auction.webapi.data.unittest.dll" id="78a6c757-dbf0-2ea0-95fd-1799fcb9e225">
+      <Execution id="715eaee3-7f1b-464d-aed6-82a0575f287b" />
+      <TestMethod codeBase="C:/Temp/AuctionPrototype/Auction.Webapi.Data.UnitTest/bin/Debug/Auction.Webapi.Data.UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Auction.Webapi.Data.UnitTest.CustomerTest, Auction.Webapi.Data.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCustomer_ValidId" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="78a6c757-dbf0-2ea0-95fd-1799fcb9e225" executionId="715eaee3-7f1b-464d-aed6-82a0575f287b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="715eaee3-7f1b-464d-aed6-82a0575f287b" testId="78a6c757-dbf0-2ea0-95fd-1799fcb9e225" testName="GetCustomer_ValidId" computerName="JOEPOP4" duration="00:00:00.1409062" startTime="2014-06-29T20:16:13.4000337-07:00" endTime="2014-06-29T20:16:13.7475888-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="715eaee3-7f1b-464d-aed6-82a0575f287b">
+    </UnitTestResult>
+  </Results>
+</TestRun>

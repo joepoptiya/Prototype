@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="de648939-0aa9-457b-b428-d444f9af5820" name="joepop@JOEPOP4 2014-06-30 00:12:43" runUser="REDMOND\joepop" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="32153d4a-0ccc-4ca5-a9ef-ed67c740cb6d">
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+    <Deployment runDeploymentRoot="joepop_JOEPOP4 2014-06-30 00_12_43" />
+  </TestSettings>
+  <Times creation="2014-06-30T00:12:43.6126585-07:00" queuing="2014-06-30T00:12:43.9827122-07:00" start="2014-06-30T00:12:44.0546892-07:00" finish="2014-06-30T00:12:44.5327221-07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetCustomer_ValidId" storage="auction.webapi.data.unittest.dll" id="78a6c757-dbf0-2ea0-95fd-1799fcb9e225">
+      <Execution id="d8dae223-fd07-4bb1-87da-d73fc0d1ef33" />
+      <TestMethod codeBase="C:/Temp/AuctionPrototype/Auction.Webapi.Data.UnitTest/bin/Debug/Auction.Webapi.Data.UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Auction.Webapi.Data.UnitTest.CustomerTest, Auction.Webapi.Data.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCustomer_ValidId" />
+    </UnitTest>
+    <UnitTest name="GetCustomerOrderTest" storage="auction.webapi.data.unittest.dll" id="de1f5de6-7705-510a-3d6f-6538446b0209">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Manual" />
+      </TestCategory>
+      <Execution id="be378a38-eb14-4c33-a168-d0f6e85fd87a" />
+      <TestMethod codeBase="C:/Temp/AuctionPrototype/Auction.Webapi.Data.UnitTest/bin/Debug/Auction.Webapi.Data.UnitTest.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Auction.Webapi.Data.UnitTest.CustomerTest, Auction.Webapi.Data.UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCustomerOrderTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="78a6c757-dbf0-2ea0-95fd-1799fcb9e225" executionId="d8dae223-fd07-4bb1-87da-d73fc0d1ef33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de1f5de6-7705-510a-3d6f-6538446b0209" executionId="be378a38-eb14-4c33-a168-d0f6e85fd87a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d8dae223-fd07-4bb1-87da-d73fc0d1ef33" testId="78a6c757-dbf0-2ea0-95fd-1799fcb9e225" testName="GetCustomer_ValidId" computerName="JOEPOP4" duration="00:00:00.1413294" startTime="2014-06-30T00:12:44.0996919-07:00" endTime="2014-06-30T00:12:44.4497169-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8dae223-fd07-4bb1-87da-d73fc0d1ef33">
+    </UnitTestResult>
+    <UnitTestResult executionId="be378a38-eb14-4c33-a168-d0f6e85fd87a" testId="de1f5de6-7705-510a-3d6f-6538446b0209" testName="GetCustomerOrderTest" computerName="JOEPOP4" duration="00:00:00.0272295" startTime="2014-06-30T00:12:44.4537165-07:00" endTime="2014-06-30T00:12:44.4857180-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be378a38-eb14-4c33-a168-d0f6e85fd87a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Test not implemented</Message>
+          <StackTrace>   at Auction.Webapi.Data.UnitTest.CustomerTest.GetCustomerOrderTest() in c:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\CustomerTest.cs:line 42
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

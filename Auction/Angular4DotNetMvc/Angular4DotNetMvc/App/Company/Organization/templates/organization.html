@@ -1,0 +1,111 @@
+﻿<div class="row">
+    <div class="span10">
+        <h2>Organization: Home</h2>
+    </div>
+</div>
+<div class="row">
+
+    <!--
+    <div class="col-sm-2">
+        <div class="row">
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="/Company/Organization/Home">Home</a></li>
+              <li><a href="/Company/Organization/Register">Register Organization</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="disabled"><a href="#">Disabled</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+    </div>
+    --> 
+
+    <div class="col-lg-10">
+        <div class="row">
+            <div class="col-lg-9">
+                <h3>Welcome to the Auction Company Site.</h3>
+                <p>User: {{ userinfo.username }}</p>
+            </div>
+            <div class="col-lg-3">
+                <a class="btn btn-default" href="/Company/Organization/Register">Create New Organization</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-striped table-hover ">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Organization</th>
+                      <th>Description</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody ng-repeat="item in organizationlist">
+                    <tr class="{{ item.class }}">
+                      <td>{{ item.id }}</td>
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.description }}</td>
+                      <td>{{ item.status }}</td>
+                      <td><a class="btn btn-primary btn-xs" href="/Company/Organization/Detail/{{ item.id }}">Detail</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+        <div class="row">
+            <aside class="top-sidebar">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Help Content</h3>
+                  </div>
+                  <div class="panel-body">
+                    Here is some helpful tips and guideline for what to do.
+                  </div>
+                </div>
+		    </aside>
+            <aside class="top-sidebar">
+			    <article>
+                    <div class="list-group">
+                      <a class="list-group-item" href="#">
+                        <h4 class="list-group-item-heading">Help Content</h4>
+                        <p class="list-group-item-text">Here is some helpful tips and guideline for what to do.</p>
+                      </a>
+                      <a class="list-group-item" href="#">
+                        <h4 class="list-group-item-heading">How-To</h4>
+                        <p class="list-group-item-text">Here is some helpful tips and guideline for what to do.  Here is some helpful tips and guideline for what to do.</p>
+                      </a>
+                    </div>
+			    </article>
+		    </aside>
+            <aside class="top-sidebar">
+			    <article>
+			    <h2>Help Content</h2>
+			    <p>Here is some helpful tips and guideline for what to do.</p>
+			    </article>
+		    </aside>
+            <aside class="top-sidebar">
+			    <article>
+			    <h2>Help Content</h2>
+			    <p>Here is some helpful tips and guideline for what to do.</p>
+			    </article>
+		    </aside>
+        </div>
+    </div>
+</div>
+
+

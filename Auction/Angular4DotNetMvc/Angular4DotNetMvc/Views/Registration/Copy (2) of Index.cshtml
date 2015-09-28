@@ -1,0 +1,43 @@
+﻿@model Angular4DotNetMvc.Models.Registration.RegistrationVm
+
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section JavascriptInHead
+{
+    <script src="~/App/College/Courses/courses-controller.js"></script>
+    <script src="~/App/College/Instructors/instructors-controller.js"></script>
+    <script src="~/App/College/Registration/registration-controller.js"></script>
+    <script type="text/javascript">
+        registrationModule.factory('bootstrappedData', function () {
+            return {
+                courses: @Html.Raw(Model.Courses),
+                instructors: @Html.Raw(Model.Instructors),
+                message: "Welcome"
+            };
+        });
+    </script>
+}
+
+<div class="container" data-ng-controller="RegistrationController">
+    <div class="row">
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <ul class="nav navbar-nev">
+                    <li><span class="navbar-brand">Registration</span></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Registration/Courses">Browse Courses</a></li>
+                    <li><a href="/Registration/Instructors">Browse Instructors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-ng-view=""></div>
+
+</div> 
+

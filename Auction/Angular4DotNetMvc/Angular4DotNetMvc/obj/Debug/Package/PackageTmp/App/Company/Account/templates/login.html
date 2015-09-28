@@ -1,0 +1,24 @@
+﻿ <div class="row">
+    <div class="span10">
+        <h2>User Login</h2>
+    </div>
+</div>
+<form name="accountForm" novalidate>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" ng-model="student.email" class="form-control" required ng-pattern="/^[a-zA-Z0-9'._%+-]+@[a-zA-Z0-9-][a-zA-Z0-9.-]*\.[a-zA-Z]{2,9}$/"/>
+                <div class="text-danger" ng-show="accountForm.email.$error.required && accountForm.email.$dirty">Please enter an email address.</div>
+                <div class="text-danger" ng-show="accountForm.email.$error.pattern && accountForm.email.$dirty">Please enter an valid email address.</div>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="password" ng-model="student.password" class="form-control" required/>
+                <div class="text-danger" ng-show="accountForm.password.$error.required && accountForm.password.$dirty">Please enter a password.</div>
+            </div>
+            <button class="btn btn-default" ng-disabled="accountForm.$invalid" ng-click="save(student)">Login</button>
+            <div style="color:red;" ng-show="errors.length > 0" ng-repeat="error in errors">{{error}}</div>
+        </div>
+    </div>
+</form>

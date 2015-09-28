@@ -1,0 +1,9 @@
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\bin\Debug\Auction.Webapi.Data.UnitTest.dll
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\bin\Debug\Auction.Webapi.Data.UnitTest.pdb
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\bin\Debug\Auction.Webapi.Data.dll
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\bin\Debug\Moq.dll
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\bin\Debug\Auction.Webapi.Data.pdb
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\bin\Debug\Moq.xml
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\obj\Debug\Auction.Webapi.Data.UnitTest.csprojResolveAssemblyReference.cache
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\obj\Debug\Auction.Webapi.Data.UnitTest.dll
+C:\Temp\AuctionPrototype\Auction.Webapi.Data.UnitTest\obj\Debug\Auction.Webapi.Data.UnitTest.pdb
