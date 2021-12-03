@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section JavascriptInHead
+{
+    <script src="~/App/College/Courses/courses-controller.js"></script>
+    <script src="~/App/College/Courses/course-repository.js"></script>
+    <script src="~/App/College/Instructors/instructors-controller.js"></script>
+    <script src="~/App/College/Instructors/instructors-repository.js"></script>
+    <script src="~/App/College/Account/account-controller.js"></script>
+    <script src="~/App/College/Account/account-repository.js"></script>
+    <script src="~/App/College/Registration/registration-controller.js"></script>
+    
+}
+
+<div class="container" data-ng-controller="RegistrationController">
+    <div class="row">
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li><span class="navbar-brand">Registration</span></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Registration/Courses">Browse Courses</a></li>
+                    <li><a href="/Registration/Instructors">Browse Instructors</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/Registration/CreateAccount">Create Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-ng-view=""></div>
+</div> 
+

@@ -1,0 +1,67 @@
+﻿<div class="row">
+    <div class="span10">
+        <h2>Account: Home</h2>
+    </div>
+</div>
+
+<div class="row">
+
+    <!-- Side menu -->
+    <div class="col-sm-2">
+
+        <div class="row">
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="disabled"><a href="#">Disabled</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Main area -->
+    <div class="col-lg-10"> <!-- style="background-color:yellow;"> -->
+        <form name="accountForm" novalidate>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label>First Name:</label>
+                        <input type="text" name="firstName" ng-model="student.firstName" class="form-control" required/>
+                        <div class="text-danger" ng-show="accountForm.firstName.$error.required && accountForm.firstName.$dirty">Please enter your first name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name:</label>
+                        <input type="text" name="lastName" ng-model="student.lastName" class="form-control" required/>
+                        <div class="text-danger" ng-show="accountForm.lastName.$error.required && accountForm.lastName.$dirty">Please enter your last name.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" ng-model="student.email" class="form-control" required ng-pattern="/^[a-zA-Z0-9'._%+-]+@[a-zA-Z0-9-][a-zA-Z0-9.-]*\.[a-zA-Z]{2,9}$/"/>
+                        <div class="text-danger" ng-show="accountForm.email.$error.required && accountForm.email.$dirty">Please enter an email address.</div>
+                        <div class="text-danger" ng-show="accountForm.email.$error.pattern && accountForm.email.$dirty">Please enter an valid email address.</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="password" name="password" ng-model="student.password" class="form-control" required/>
+                        <div class="text-danger" ng-show="accountForm.password.$error.required && accountForm.password.$dirty">Please enter a password.</div>
+                    </div>
+                    <button class="btn btn-default" ng-disabled="accountForm.$invalid" ng-click="save(student)">Create Account</button>
+                    <div style="color:red;" ng-show="errors.length > 0" ng-repeat="error in errors">{{error}}</div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
